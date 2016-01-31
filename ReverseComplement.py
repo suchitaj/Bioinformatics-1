@@ -1,3 +1,24 @@
+#!/usr/bin/env python3
+'''
+Solutions to programming assignments for the Bioinformatics Algorithms (Part 1) on Coursera.
+The associated textbook is Bioinformatics Algorithms: An Active-Learning Approach by Phillip Compeau & Pavel Pevzner.
+The course is run on Coursera and the assignments and textbook are hosted on Stepic
+
+Problem Titles and Related URLs (available to enrolled students only)
+- Compute Reverse Complement of a DNA fragment.
+https://stepic.org/Bioinformatics-Algorithms-2/Some-Hidden-Messages-are-More-Surprising-than-Others-3/#step-2
+
+- Clump finding problem
+https://stepic.org/Bioinformatics-Algorithms-2/An-Explosion-of-Hidden-Messages-4/#step-4
+
+- Frequent words problems in a DNA string (allowing for mismatches)
+https://beta.stepic.org/Bioinformatics-Algorithms-2/Some-Hidden-Messages-are-More-Elusive-than-Others-9/#step-5
+
+- Approximate Pattern matching and Pattern counting
+  https://stepic.org/Bioinformatics-Algorithms-2/Some-Hidden-Messages-are-More-Surprising-than-Others-3/#step-5
+
+'''
+
 import sys
 
 def PatternMatching(pattern, text):
@@ -27,6 +48,7 @@ def FrequentWords(text, k):
     return frequentPatterns.keys()
 
 def ReverseComplement(text):
+    '''Find the reverse complement of a DNA string.'''
     revComp = ''
     complement = {
         'A' : 'T',

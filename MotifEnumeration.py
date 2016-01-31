@@ -1,3 +1,16 @@
+'''
+A solution to a programming assignment for the Bioinformatics Algorithms (Part 1) on Coursera.
+The associated textbook is Bioinformatics Algorithms: An Active-Learning Approach by Phillip Compeau & Pavel Pevzner.
+The course is run on Coursera and the assignments and textbook are hosted on Stepic
+Problem Title: Greedy Motif Search with Pseudocounts
+Find all (k,d) motifs in a collection of strings.
+Input: A collection of strings, Dna, and integers, k, and d,
+Output:All (, d) motifs in a Dna
+
+URL: https://beta.stepic.org/Bioinformatics-Algorithms-2/Motif-Finding-Is-More-Difficult-Than-You-Think-156/#step-7
+
+'''
+
 import sys
 
 def NumberToPattern(index, k):
@@ -180,7 +193,7 @@ def PrintListLine(l):
 lines = sys.stdin.read().splitlines()
 k,t = [int(x) for x in lines[0].split()]
 
-##PrintListLine(GreedyMotifSearchWithPsuedocounts(lines[1:], k, t))
+PrintListLine(GreedyMotifSearchWithPsuedocounts(lines[1:], k, t))
 
 ##Profile = {}
 ##Profile['A'] = [float(x) for x in lines[2].split()]
